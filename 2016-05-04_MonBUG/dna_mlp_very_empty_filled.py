@@ -23,7 +23,7 @@ if __name__ == "__main__" :
 	inp = ML.Input(400, name = "InputLayer")
 
 	hid = ML.Hidden(8,
-		activations = MA.ReLU(),
+		activation = MA.ReLU(),
 		regularizations = [MR.L2(0.0001)],
 		decorators = [MD.BinomialDropout(0.1)],
 		name = "Hidden"
